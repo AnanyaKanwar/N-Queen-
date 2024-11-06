@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  margin: 0;
+  padding: 40px; /* Increased padding around the body */
+  color: #333; /* Dark text color for better readability */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 30px; /* Increased padding for header */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white header background */
+  color: #333; /* Dark text color */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 2em; /* Larger font size for the header */
+}
+
+/* Input Box Styles */
+.inputbox {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px; /* Increased padding for input box container */
+  background-color: #ffffff; /* White background for input box */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.numberbox {
+  width: 80%;
+  padding: 15px; /* Increased padding for input */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.numberbox:focus {
+  border-color: #0056b3; /* Darker blue on focus */
+  outline: none;
+}
+
+/* Slider Styles */
+.slider-container {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  padding: 10px; /* Added padding around the slider */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff6f61, #ffcc00); /* Gradient background */
+  outline: none;
+  margin: 10px 0; /* Added margin */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff; /* White thumb */
+  border: 2px solid #007bff; /* Blue border for thumb */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff; /* White thumb */
+  border: 2px solid #007bff; /* Blue border for thumb */
+  cursor: pointer;
+}
+
+/* Button Styles */
+.play-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  padding: 15px 30px; /* Increased padding for button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
+}
+
+.play-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Queen Arrangement Styles */
+.queen-arrangement {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 20px; /* Added padding around the arrangement */
+}
+
+#n-queen-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15px; /* Increased gap between grid items */
+  margin-top: 20px;
+  padding: 20px; 
+  background-color: #ffffff; 
+}
+.slider-container {
+  position: relative; /* Position relative for tooltip */
+  width: 100%; /* Ensure the slider container takes full width */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  color: #fff; /* White text */
+  padding: 5px 10px; /* Padding around text */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  transform: translateX(-50%); /* Center the tooltip */
+  visibility: hidden; /* Initially hidden */
+  white-space: nowrap; /* Prevent text wrapping */
+  transition: visibility 0.2s, opacity 0.2s; /* Smooth transition */
+  opacity: 0; /* Initially invisible */
+}
+
+.slider-container:hover .tooltip {
+  visibility: visible; /* Show tooltip on hover */
+  opacity: 1; /* Make it visible */
+}
