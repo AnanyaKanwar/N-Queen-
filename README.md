@@ -1,24 +1,9 @@
-a)	Opening the project.
+# N-Queen Visualiser
 
+- The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboard so that no two queens threaten each other. Thus, a solution requires that no two queens share the same row, column, or diagonal.
 
-![image](https://github.com/user-attachments/assets/e7e05b93-6071-4ca8-853c-af2b7c7abf75)
+- This algorithm is designed using recursion.
 
+![N-Queen-visualisation](visualisation.gif)
 
-
-b)	Entering inputs to form N-Queen for n*n matrix, here n=4, adjusting speed from slider
-
-
-
-![image](https://github.com/user-attachments/assets/461df4ac-7a91-445e-8014-16a76da08d34)
-
-
-
-
-c)	Giving other inputs, here n=4
-
-
-
-![image](https://github.com/user-attachments/assets/e98b8763-f35c-4f12-8771-85cbb6bf30f4)
-
-
-
+**<p align='center'>You can find the website live <a href="https://nqueen.netlify.app/">here</a></p>**
